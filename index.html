@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link href="fonts/material-icons.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/materialize/materialize.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+
+  <title>Furnarius</title>
+
+</head>
+
+<body class="brown lighten-5">
+
+  <header>
+
+  </header>
+  <ul id="dropdownjuego" class="dropdown-content" tabindex="0">
+    <li><a href="#!">Juego Uno</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Juego Dos</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Juego Tres</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Juego Cuatro</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Juego Cinco</a></li>
+  </ul>
+  <div class="navbar-fixed">
+    <nav class="nav-extended z-depth-4">
+      <div class="nav-wrapper brown darken-2">
+        <a href="index.html" class="brand-logo left" id="logo"><img src="img/Logo.svg"></a>
+        <ul id="nav-mobile" class="right">
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdownjuego">Seleccione un Juego<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li class="hide-on-med-only hide-on-small-only"><a href="#sinopsis">Sinopsis</a></li>
+          <li class="hide-on-med-only hide-on-small-only"><a href="#componentes">Componentes</a></li>
+          <li class="hide-on-med-only hide-on-small-only"><a href="#personajes">Personajes</a></li>
+          <li class="hide-on-med-only hide-on-small-only"><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="">
+    <div class="section transparent">
+      <div class="row container iso">
+        <a href="index.html"><img src="img/Isologo.png" alt="Furnarius - Juegos de Rol"></a>
+      </div>
+      <div class="carousel-row-container z-depth-4">
+        <div class="carousel carousel-slider">
+          <img class="carousel-item" src="img/epocasdeconquista.jpg">
+          <img class="carousel-item" src="img/colonizacionportuguesa.jpg">
+          <img class="carousel-item" src="img/hispanidad.jpg">
+          <img class="carousel-item" src="img/virreynato.jpg">
+          <img class="carousel-item" src="img/colonizacionanglosajona.jpg">
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div>
+      <div id="shopCart">
+        <a class="waves-effect waves-light btn modal-trigger orange lighten-1" href="#modal1"><i class="large material-icons">shopping_cart</i></a>
+      </div>
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Paso 1: Datos personales</h4>
+            <a href="#!" class="modal-action modal-close waves-effect waves-red nounderline">
+              <h6><i class="material-icons">close</i></h6>
+            </a>
+          </div>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s4">
+                <input id="dni" type="text" class="validate">
+                <label for="dni">DNI</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="fnac" type="date" class="validate">
+                <label for="fnac">Fecha de nacimiento</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s4">
+                <input id="nombre" type="text" class="validate">
+                <label for="nombre">Nombre</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="ape" type="text" class="validate">
+                <label for="ape">Apellido</label>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="input-field col s6">
+                <input type="text" id="calle" class="validate">
+                <label for="calle">Calle</label>
+              </div>
+              <div class="input-field col s2">
+                <input type="text" id="altura" class="validate">
+                <label for="altura">Altura</label>
+              </div>
+            </div> -->
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#modal2" class="waves-effect waves-red btn brown darken-1 modal-trigger modal-close">Continuar<i
+              class="right material-icons">create</i></a>
+        </div>
+      </div>
+      <div id="modal2" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Paso 2: Envío</h4>
+            <a href="#!" class="modal-action modal-close waves-effect waves-red nounderline">
+              <h6><i class="material-icons">close</i></h6>
+            </a>
+          </div>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s4">
+                <input id="localidad" type="text" class="validate">
+                <label for="localidad">Localidad</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="calle" type="text" class="validate">
+                <label for="calle">Calle</label>
+              </div>
+              <div class="input-field col s2">
+                <input type="text" class="validate" id="altura">
+                <label for="altura">Altura</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s2">
+                <input type="text" id="piso" class="validate">
+                <label for="piso">Piso</label>
+              </div>
+              <div class="input-field col s2">
+                <input type="text" id="departamento" class="validate">
+                <label for="departamento">Dpto</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#modal3" class="waves-effect waves-red btn brown darken-1 modal-trigger modal-close">Continuar<i
+            class="right material-icons">create</i></a>
+        </div>
+      </div>
+      <div id="modal3" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Paso 3: Tarjeta</h4>
+            <a href="#!" class="modal-action modal-close waves-effect waves-red nounderline">
+              <h6><i class="material-icons">close</i></h6>
+            </a>
+          </div>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s4">
+                <input id="tarjeta" type="text" class="validate">
+                <label for="tarjeta">Tarjeta</label>
+              </div>
+              <div class="input-field col s2">
+                <input id="codSeguridad" type="text" class="validate">
+                <label for="codSeguridad">CVV/CVC</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <p>Precio :$500</p>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="waves-effect waves-red btn brown darken-1 modal-action modal-close">Finalizar<i class="right material-icons">check</i></a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="sinopsis">
+        <h2 class="center-align black-text header">Sinopsis</h2>
+        <div class="parallax-container">
+            <div class="parallax">
+              <img src="img/tomatenochtitlan.jpg" alt="Épocas de Conquista">
+            </div>
+          </div>
+              <h5 class="center-align descripcion-sinopsis brown darken-1 white-text">
+                Adéntrate en una apasionante aventura en la que tendrás que ponerte en la piel de 
+                aquellos que desean reclamar lo que creen que les pertenece, o en la que defienden 
+                las tierras en las que nacieron con su propia vida. Tendrás que usar todas tus 
+                habilidades de supervivencia para fabricar grandes armas, establecer
+                puntos estratégicos, y dar rienda suelta a tu imaginacion, donde cada acción que tomes
+                , decidirá tu destino en esta gran época de conquista.
+                </h6>          
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--Eze-->
+
+    <div class="container" id="componentes">
+      <h2 class="center-align black-text header">Componentes</h2>
+      <div class="card waves-effect waves-block waves-light z-depth-4 imagencomp">
+        <div class="card-image">
+          <img src="img/box.jpg" class="icomponentes">
+        </div>
+        <div class="card-content brown darken-1 white-text">
+          <p id="componentes">Contiene: Un libro de reglas, un tablero de juego, 15 miniaturas, 80 cartas, 50 hojas de personajes y
+            6 dados de doce caras</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="" id="tarjeta2">
+        <h2 class="center-align black-text header">Componentes</h2>
+        <div class="col s12 l8 offset-l1">
+          <div class="card comp waves-effect waves-block waves-light z-depth-4">
+            <div class="card-image">
+              <img src="img/box.jpg">
+            </div>
+            <div class="card-content brown darken-1 white-text">
+              <p>Contiene: Un libro de reglas, un tablero de juego, 15 miniaturas, 80 cartas, 50 hojas de personajes y
+                6 dados de doce caras</p>
+            </div>
+          </div>
+        </div>
+    </div> -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container" id="personajes">
+      <div class="row pjs">
+        <h2 class="center-align black-text header">Personajes</h2>
+        <div class="card col s10 l3 offset-l2 pj brown darken-1 z-depth-4">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator imagencard" src="img/Aborigen.jpg">
+          </div>
+          <div class="card-content center-align">
+            <span class="card-title activator white-text">Aborigen<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal brown darken-1 white-text">
+            <span class="card-title titulocarta">Aborigen<i class="material-icons right">close</i></span>
+            <ul class="texto">
+              <li>Fuerza: 58</li>
+              <li>Destreza: 63</li>
+              <li>Constitución: 74</li>
+              <li>Inteligencia: 80</li>
+              <li>Sabiduría: 97</li>
+              <li>Carisma: 65</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card pj col s10 l3 offset-l2 brown darken-1 z-depth-4">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator imagencard" src="img/Conquistador.jpg">
+          </div>
+          <div class="card-content center-align">
+            <span class="card-title activator white-text titulocarta">Conquistador<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal brown darken-1 white-text">
+            <span class="card-title">Conquistador<i class="material-icons right">close</i></span>
+            <ul class="texto">
+              <li>Fuerza: 70</li>
+              <li>Destreza: 75</li>
+              <li>Constitución: 80</li>
+              <li>Inteligencia: 62</li>
+              <li>Sabiduría: 50</li>
+              <li>Carisma: 45</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+  <!--Igna-->
+
+  <footer class="page-footer brown darken-2" id="contacto">
+    <div class="row contenedorFooter">
+      <div class="col columna1 l3 s12">
+        <div class="titulo-datos">Nosotros</div>
+        <div class="texto">Somos una empresa dedicada al desarrollo de juegos de rol de carácter nacional y autóctono
+          con una vasta experiencia en el mercado</div>
+      </div>
+      <div class="col columna2 l3 s12">
+        <div class="titulo-datos">Contacto</div>
+        <div class="datos-contacto">
+          <div class="item-contacto"><i class="material-icons prefix">contact_phone</i>4666-6666 </div>
+          <div class="item-contacto"><i class="material-icons prefix">place</i>calle falsa 123 </div>
+          <div class="item-contacto"><i class="material-icons prefix">contact_mail</i>correo@hotmail.com
+          </div>
+        </div>
+        <div class="redes-sociales">
+          <div>
+            <a href="#"><img src="img/facebook.svg" class="red-social" alt="" width="20px" height="20px"></a>
+          </div>
+          <div>
+            <a href="#"><img src="img/twitter.svg" class="red-social" alt="" width="20px" height="20px"></a>
+          </div>
+          <div>
+            <a href="#"><img src="img/instagram.svg" class="red-social" alt="" width="20px" height="20px"></a>
+          </div>
+
+        </div>
+      </div>
+      <form class="col s12 l6 ultimaCol center-align">
+        <div class="row fila">
+          <div class="input brown lighten-5 col s12 l6">
+            <label for="first_name"><i class="material-icons prefix">account_circle</i></label>
+            <input id="first_name" type="text" required placeholder="Nombre" class="">
+          </div>
+          <div class="input brown lighten-5 col s12 l6">
+            <label for="email-msj"><i class="material-icons prefix">email</i></label>
+            <input id="email-msj" type="email" placeholder="Email" required class="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="input brown text-area lighten-5">
+            <textarea id="textarea1" placeholder="Deje su mensaje" required class="materialize-textarea"></textarea>
+          </div>
+        </div>
+        <div id="advertencia" style="display:none">Debe ingresar todos los campos para poder enviar!</div>
+        <div id="advertenciaEmail" style="display:none">Debe ingresar un email válido!</div>
+        <div id="correcto" style="display:none">Mensaje enviado correctamente</div>
+        <br>
+
+        <div class="row boton">
+          <a class="waves-effect waves-light brown lighten-5 btn" type="submit" id="enviar"><i class="material-icons left">send</i>Enviar</a>
+        </div>
+      </form>
+    </div>
+
+
+  </footer>
+
+  <script src="lib/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+  <script src="lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <!-- <script src="lib/bootstrap/bootstrap.min.js"></script> -->
+  <script src="lib/tooltip/tooltip.min.js"></script>
+  <script type="text/javascript" src="js/materialize/materialize.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
